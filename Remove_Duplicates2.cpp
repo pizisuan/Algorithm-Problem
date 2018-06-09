@@ -24,7 +24,7 @@ public:
       return 0;
     }
     int j = 0;
-    int times = 0;
+    int times = 0;  // 重复次数记录
     for (int i = 1; i < numsSize; i++)
     {
       if (nums[j] == nums[i])
