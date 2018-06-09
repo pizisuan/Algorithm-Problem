@@ -30,7 +30,7 @@ public:
     {
       if (a[j] != a[i])
       {
-        a[++j] = a[i];
+        a[++j] = a[i];     // j++; a[j] = a[i];  j指针移动一位后，将i位置的内容拷贝到j位置
       }
     }
     return j+1;
