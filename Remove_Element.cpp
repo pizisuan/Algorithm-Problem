@@ -13,22 +13,21 @@
  * 将此时i对应的值复制到j的位置上，增加j，重复上述过程直到遍历结束。这时候j就是新的数组长度。
  */
 
-class solution
+class Solution 
 {
 public:
-	int removeElement(int a[], int n, int elem)
-	{
-		int i = 0;
-		int j = 0;
-		for (i = 0; i < n; i++)
-		{
-			if (a[i] == elem)
-			{
-				continue;
-			}
-			a[j] = a[i];
-			j++;
-		}
-		return j;
-	}
+    int removeElement(vector<int>& nums, int val) 
+    {
+        int i = 0;
+        int j = 0;
+        for(i = 0; i < nums.size(); i++)
+        {
+            if(nums[i] != val)
+            {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        return j;
+    }
 };
