@@ -13,8 +13,6 @@
  * Output:  [1,2,4,7,5,3,6,8,9]
  */
  
- // test_cpp.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <iostream>
