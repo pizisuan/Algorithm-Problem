@@ -22,13 +22,13 @@ class Solution_Leetcode542
 public:
     vector<vector<int>> updateMatrix(vector<vector<int>>& matrix);
 private:
-    // ¹ã¶ÈÓÅÏÈËÑË÷
+    // å¹¿åº¦ä¼˜å…ˆæœç´¢
     int BFS(vector<vector<int>>& matrix, int row, int col);
 };
 
 
 // leetcode 542 --- 01 Matrix --- medium
-// ¹ã¶ÈÓÅÏÈËÑË÷
+// å¹¿åº¦ä¼˜å…ˆæœç´¢
 vector<vector<int>> Solution_Leetcode542::updateMatrix(vector<vector<int>>& matrix)
 {
     int row = matrix.size();
@@ -68,7 +68,7 @@ int Solution_Leetcode542::BFS(vector<vector<int>>& matrix, int row, int col)
             {
                 pair<int, int> temp = make_pair(first_node.first + surround[i].first, first_node.second + surround[i].second);
 
-                // Ğ£ÑéÊÇ·ñ·ÃÎÊ»òÕß³¬½ç
+                // æ ¡éªŒæ˜¯å¦è®¿é—®æˆ–è€…è¶…ç•Œ
                 if (temp.first < 0 || temp.first >= matrix.size() || temp.second < 0 || temp.second >= matrix[0].size() || visited.find(temp) != visited.end())
                 {
                     continue;
